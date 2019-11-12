@@ -7,122 +7,111 @@
 </head>
 
 <body>
-
   <header class="header">
-    <a class="header__logo" href="#">
+    <a class="header__logo" href="index.html">
       <img class="header__logo-image" src="https://via.placeholder.com/191x39" width="191" height="39"
         alt="Логотип Кэт энерджи">
     </a>
     <button class="header__menu-button" type="button">Кнопка меню</button>
-    <ul>
-        <li>
-          <a href="#">Главная</a>
+    <nav class="header__navigation">
+      <ul class="header__navigation-list navigation-list">
+        <li class="navigation-list__item">
+          <a class="navigation-list__link" href="index.html">Главная</a>
         </li>
-        <li>
-          <a href="#">Каталог продукции</a>
+        <li class="navigation-list__item">
+          <a class="navigation-list__link" href="catalog.html">Каталог продукции</a>
         </li>
-        <li>
-          <a href="#">Подбор программы</a>
+        <li class="navigation-list__item">
+          <a class="navigation-list__link">Подбор программы</a>
         </li>
       </ul>
+    </nav>
   </header>
-
   <main class="main">
-
-    <section class="programm">
-      <h2>Подбор программы</h2>
-      <p>Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <form action="https://echo.htmlacademy.ru" method="get">
-
-        <fieldset>
-          <label for="name">
+    <section class="program">
+      <h2 class="program__title">Подбор программы</h2>
+      <p class="program__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form class="program__form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="program__user">
+          <label class="program__name" for="name">
             <span>Имя:*</span>
             <input type="text" name="name" id="name" placeholder="Барсик">
           </label>
-          <label for="weight">
+          <label class="program__weight" for="weight">
             <span>Вес (кг):*</span>
             <input type="number" name="weight" id="weight" placeholder="7">
           </label>
-          <label for="age">
+          <label class="program__age" for="age">
             <span>Возраст (лет):</span>
             <input type="number" name="age" id="age" placeholder="7">
           </label>
         </fieldset>
-
-        <fieldset>
-          <label for="programm-one">
+        <fieldset class="program__plan">
+          <label class="program__plan-one" for="plan-one">
             <span>Похудение</span>
-            <input type="radio" name="programm" id="programm-one" value="Похудение">
+            <input type="radio" name="plan" id="plan-one" value="Похудение">
           </label>
-          <label for="programm-two">
+          <label class="program__plan-two" for="plan-two">
             <span>Похудение</span>
-            <input type="radio" name="programm" id="programm-two" value="Набор массы">
+            <input type="radio" name="plan" id="plan-two" value="Набор массы">
           </label>
-          <label for="programm-three">
+          <label class="program__plan-three" for="plan-three">
             <span>Похудение</span>
-            <input type="radio" name="programm" id="programm-three" value="Не знаю (Нужен ваш совет)">
+            <input type="radio" name="plan" id="plan-three" value="Не знаю (Нужен ваш совет)">
           </label>
         </fieldset>
-
-        <fieldset>
+        <fieldset class="program__contacts">
           <legend>Контактные данные (владельца кота)</legend>
-          <label for="email">
+          <label class="program__email" for="email">
             <span>E-mail:*</span>
             <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
           </label>
-          <label for="phone">
+          <label class="program__phone" for="phone">
             <span>Телефон:*</span>
             <input type="number" name="phone" id="phone" placeholder="8 (960) 900-60-90">
           </label>
         </fieldset>
-
-        <fieldset>
+        <fieldset class="program__comments">
           <legend>Комментарий</legend>
-          <label for="email">
+          <label class="programm__text" for="text">
             <textarea name="text" id="text" placeholder="Расскажите обо всех повадках кота"></textarea>
           </label>
         </fieldset>
-
-        <fieldset>
+        <fieldset class="program__additionally">
           <legend>Дополнительно</legend>
-          <label for="sweetener">
+          <label class="program__sweetener" for="sweetener">
             <span>Сахарозаменитель</span>
             <input type="checkbox" name="sweetener" id="sweetener" value="Сахарозаменитель">
           </label>
-          <label for="water">
+          <label class="program__water" for="water">
             <span>Питьевая вода</span>
             <input type="checkbox" name="water" id="water" value="Питьевая вода">
           </label>
-          <label for="milk">
+          <label class="program__milk" for="milk">
             <span>Молоко</span>
             <input type="checkbox" name="milk" id="milk" value="Молоко">
           </label>
-          <label for="milk">
+          <label class="program__vitamins" for="vitamins">
             <span>Витамины</span>
-            <input type="checkbox" name="milk" id="milk" value="Витамины">
+            <input type="checkbox" name="vitamins" id="vitamins" value="Витамины">
           </label>
         </fieldset>
-
-        <button type="submit">Отправить заявку</button>
-
-        <p>* — Обязательные поля</p>
-
+        <button class="program__send" type="submit">Отправить заявку</button>
+        <p class="program__info">* — Обязательные поля</p>
       </form>
     </section>
-
   </main>
-
   <footer class="footer">
     <section class="contacts">
       <h2 class="visually-hidden">Сотрудничество</h2>
       <p class="contacts__intro-text">приглашаем к сотрудничеству дилеров!</p>
       <address class="contacts__address">
-        <p class="contacts__address-item">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="contacts__address-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </address>
       <img class="contacts__map" src="https://via.placeholder.com/320x400" alt="Изображение карты">
     </section>
-    <a class="footer__logo" href="#">
-      <img class="footer__logo-image" src="https://via.placeholder.com/128x24" alt="">
+    <a class="footer__logo" href="index.html">
+      <img class="footer__logo-image" src="https://via.placeholder.com/128x24" alt="Логотип Кэт энерджи">
     </a>
     <ul class="footer__socials">
       <li class="footer__socials-item">
@@ -138,11 +127,10 @@
     <div class="footer__copyright">
       <a class="footer__copyright-title" href="#">HTML Academy</a>
       <a class="footer__copyright-link" href="#">
-        <img class="footer__copyright-image" src="https://via.placeholder.com/27x34" alt="">
+        <img class="footer__copyright-image" src="https://via.placeholder.com/27x34" alt="Изображение иконки">
       </a>
     </div>
   </footer>
-
 </body>
 
 </html>

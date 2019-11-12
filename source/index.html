@@ -7,72 +7,74 @@
 </head>
 
 <body>
-
   <header class="header">
-    <a class="header__logo" href="#">
+    <a class="header__logo">
       <img class="header__logo-image" src="https://via.placeholder.com/191x39" width="191" height="39"
         alt="Логотип Кэт энерджи">
     </a>
     <button class="header__menu-button" type="button">Кнопка меню</button>
-    <ul>
-      <li>
-        <a href="#">Главная</a>
-      </li>
-      <li>
-        <a href="#">Каталог продукции</a>
-      </li>
-      <li>
-        <a href="#">Подбор программы</a>
-      </li>
-    </ul>
+    <nav class="header__navigation">
+      <ul class="header__navigation-list navigation-list">
+        <li class="navigation-list__item">
+          <a class="navigation-list__link">Главная</a>
+        </li>
+        <li class="navigation-list__item">
+          <a class="navigation-list__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="navigation-list__item">
+          <a class="navigation-list__link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
   </header>
-
   <main class="main">
     <h1 class="main__title">Функциональное питание для котов</h1>
     <p class="main__promo">Занялся собой? Займись котом!</p>
     <img class="main__promo-image" src="https://via.placeholder.com/280x270" width="280" height="270"
       alt="Кэт энерджи Pro с курицей">
-    <a class="main__promo-link" href="#">Подобрать программу</a>
+    <a class="main__promo-link" href="form.html">Подобрать программу</a>
     <section class="features">
-      <div class="features__item features__item--slim">
-        <h3>Похудение</h3>
-        <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
-          поможет вашему питомцу сбросить лишний вес.</p>
-        <a href="#">Каталог Slim</a>
-      </div>
-      <div class="features__item features__item--pro">
-        <h3>Набор массы</h3>
-        <p>Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
-          необходимые мышцы!</p>
-        <a href="#">Каталог Pro</a>
-      </div>
+      <ul class="features__list">
+        <li class="features__item features__item--slim">
+          <h3 class="features__item-title">Похудение</h3>
+          <p class="features__item-description">Ваш кот весит больше собаки и почти утратил способность лазить по
+            деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="features__item-link" href="#">Каталог Slim</a>
+        </li>
+        <li class="features__item features__item--pro">
+          <h3 class="features__item-title">Набор массы</h3>
+          <p class="features__item-description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
+            Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <a class="features__item-link" href="#">Каталог Pro</a>
+        </li>
+      </ul>
     </section>
-    <section class="how-it-works">
+    <section class="food">
       <h2 class="visually-hidden">Функциональное питание</h2>
-      <ul class="how-it-works__list">
-        <li class="how-it-works__item how-it-works__item--useful">
-          <img class="how-it-works__item-image" src="https://via.placeholder.com/60x60" alt="Иконка">
-          <p>Функциональное питание содержит только полезные питательные вещества.</p>
+      <ul class="food__list">
+        <li class="food__item food__item--useful">
+          <img class="food__item-image" src="https://via.placeholder.com/60x60" alt="Изображение иконки">
+          <p class="food__item-text">Функциональное питание содержит только полезные питательные вещества.</p>
         </li>
-        <li class="how-it-works__item how-it-works__item--fast">
-          <img class="how-it-works__item-image" src="https://via.placeholder.com/60x60" alt="Иконка">
-          <p>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+        <li class="food__item food__item--fast">
+          <img class="food__item-image" src="https://via.placeholder.com/60x60" alt="Изображение иконки">
+          <p class="food__item-text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
         </li>
-        <li class="how-it-works__item how-it-works__item--replace">
-          <img class="how-it-works__item-image" src="https://via.placeholder.com/60x60" alt="Иконка">
-          <p>Замените один-два приема обычной еды на наше функциональное питание.</p>
+        <li class="food__item food__item--replace">
+          <img class="food__item-image" src="https://via.placeholder.com/60x60" alt="Изображение иконки">
+          <p class="food__item-text">Замените один-два приема обычной еды на наше функциональное питание.</p>
         </li>
-        <li class="how-it-works__item how-it-works__item--improvements">
-          <img class="how-it-works__item-image" src="https://via.placeholder.com/60x60" alt="Иконка">
-          <p>Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+        <li class="food__item food__item--improvements">
+          <img class="food__item-image" src="https://via.placeholder.com/60x60" alt="Изображение иконки">
+          <p class="food__item-text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
         </li>
       </ul>
     </section>
     <section class="example">
       <h2 class="example__title">Живой пример</h2>
       <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-        Slim. Отличный результат без
-        изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+        часов в день.</p>
       <ul class="example__list">
         <li class="example__item">
           <span class="example__item-weight">5 кг</span>
@@ -91,18 +93,17 @@
       </div>
     </section>
   </main>
-
   <footer class="footer">
     <section class="contacts">
       <h2 class="visually-hidden">Сотрудничество</h2>
       <p class="contacts__intro-text">приглашаем к сотрудничеству дилеров!</p>
       <address class="contacts__address">
-        <p class="contacts__address-item">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="contacts__address-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </address>
       <img class="contacts__map" src="https://via.placeholder.com/320x400" alt="Изображение карты">
     </section>
-    <a class="footer__logo" href="#">
-      <img class="footer__logo-image" src="https://via.placeholder.com/128x24" alt="">
+    <a class="footer__logo">
+      <img class="footer__logo-image" src="https://via.placeholder.com/128x24" alt="Логотип Кэт энерджи">
     </a>
     <ul class="footer__socials">
       <li class="footer__socials-item">
@@ -118,11 +119,10 @@
     <div class="footer__copyright">
       <a class="footer__copyright-title" href="#">HTML Academy</a>
       <a class="footer__copyright-link" href="#">
-        <img class="footer__copyright-image" src="https://via.placeholder.com/27x34" alt="">
+        <img class="footer__copyright-image" src="https://via.placeholder.com/27x34" alt="Изображение иконки">
       </a>
     </div>
   </footer>
-
 </body>
 
 </html>
