@@ -8,11 +8,11 @@
 
 <body>
   <header class="header">
-    <a class="header__logo" href="index.html">
-      <img class="header__logo-image" src="https://via.placeholder.com/191x39" width="191" height="39"
+    <a class="header__logo logo" href="index.html">
+      <img class="logo__image" src="https://via.placeholder.com/191x39" width="191" height="39"
         alt="Логотип Кэт энерджи">
     </a>
-    <button class="header__menu-button" type="button">Кнопка меню</button>
+    <button class="header__menu-button menu-button" type="button">Кнопка меню</button>
     <nav class="header__navigation">
       <ul class="header__navigation-list navigation-list">
         <li class="navigation-list__item">
@@ -28,106 +28,104 @@
     </nav>
   </header>
   <main class="main">
-    <section class="program">
+    <section class="main__program program">
       <h2 class="program__title">Подбор программы</h2>
       <p class="program__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <form class="program__form" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="program__user">
-          <label class="program__name" for="name">
+      <form class="form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="form__user">
+          <label for="name">
             <span>Имя:*</span>
             <input type="text" name="name" id="name" placeholder="Барсик">
           </label>
-          <label class="program__weight" for="weight">
+          <label for="weight">
             <span>Вес (кг):*</span>
             <input type="number" name="weight" id="weight" placeholder="7">
           </label>
-          <label class="program__age" for="age">
+          <label for="age">
             <span>Возраст (лет):</span>
             <input type="number" name="age" id="age" placeholder="7">
           </label>
         </fieldset>
-        <fieldset class="program__plan">
-          <label class="program__plan-one" for="plan-one">
+        <fieldset class="form__plan">
+          <label for="plan-one">
             <span>Похудение</span>
             <input type="radio" name="plan" id="plan-one" value="Похудение">
           </label>
-          <label class="program__plan-two" for="plan-two">
-            <span>Похудение</span>
+          <label for="plan-two">
+            <span>Набор массы</span>
             <input type="radio" name="plan" id="plan-two" value="Набор массы">
           </label>
-          <label class="program__plan-three" for="plan-three">
-            <span>Похудение</span>
+          <label for="plan-three">
+            <span>Не знаю (Нужен ваш совет)</span>
             <input type="radio" name="plan" id="plan-three" value="Не знаю (Нужен ваш совет)">
           </label>
         </fieldset>
-        <fieldset class="program__contacts">
+        <fieldset class="form__contacts">
           <legend>Контактные данные (владельца кота)</legend>
-          <label class="program__email" for="email">
+          <label for="email">
             <span>E-mail:*</span>
             <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
           </label>
-          <label class="program__phone" for="phone">
+          <label for="phone">
             <span>Телефон:*</span>
-            <input type="number" name="phone" id="phone" placeholder="8 (960) 900-60-90">
+            <input type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90">
           </label>
         </fieldset>
-        <fieldset class="program__comments">
+        <fieldset class="form__comments">
           <legend>Комментарий</legend>
-          <label class="programm__text" for="text">
+          <label for="text">
             <textarea name="text" id="text" placeholder="Расскажите обо всех повадках кота"></textarea>
           </label>
         </fieldset>
-        <fieldset class="program__additionally">
+        <fieldset class="form__additionally">
           <legend>Дополнительно</legend>
-          <label class="program__sweetener" for="sweetener">
+          <label for="sweetener">
             <span>Сахарозаменитель</span>
             <input type="checkbox" name="sweetener" id="sweetener" value="Сахарозаменитель">
           </label>
-          <label class="program__water" for="water">
+          <label for="water">
             <span>Питьевая вода</span>
             <input type="checkbox" name="water" id="water" value="Питьевая вода">
           </label>
-          <label class="program__milk" for="milk">
+          <label for="milk">
             <span>Молоко</span>
             <input type="checkbox" name="milk" id="milk" value="Молоко">
           </label>
-          <label class="program__vitamins" for="vitamins">
+          <label for="vitamins">
             <span>Витамины</span>
             <input type="checkbox" name="vitamins" id="vitamins" value="Витамины">
           </label>
         </fieldset>
-        <button class="program__send" type="submit">Отправить заявку</button>
-        <p class="program__info">* — Обязательные поля</p>
+        <button class="form__send" type="submit">Отправить заявку</button>
+        <p class="form__info">* — Обязательные поля</p>
       </form>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer__contacts footer">
     <section class="contacts">
       <h2 class="visually-hidden">Сотрудничество</h2>
-      <p class="contacts__intro-text">приглашаем к сотрудничеству дилеров!</p>
-      <address class="contacts__address">
-        <p class="contacts__address-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      </address>
+      <p class="contacts__intro">приглашаем к сотрудничеству дилеров!</p>
+      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       <img class="contacts__map" src="https://via.placeholder.com/320x400" alt="Изображение карты">
     </section>
-    <a class="footer__logo" href="index.html">
-      <img class="footer__logo-image" src="https://via.placeholder.com/128x24" alt="Логотип Кэт энерджи">
+    <a class="footer__logo logo" href="index.html">
+      <img class="logo__image" src="https://via.placeholder.com/128x24" alt="Логотип Кэт энерджи">
     </a>
-    <ul class="footer__socials">
-      <li class="footer__socials-item">
-        <a class="footer__socials-link" href="#">Vkontakte</a>
+    <ul class="footer__socials socials">
+      <li class="socials__item">
+        <a class="socials__link" href="#">Vkontakte</a>
       </li>
-      <li class="footer__socials-item">
-        <a class="footer__socials-link" href="#">Facebook</a>
+      <li class="socials__item">
+        <a class="socials__link" href="#">Facebook</a>
       </li>
-      <li class="footer__socials-item">
-        <a class="footer__socials-link" href="#">Instagram</a>
+      <li class="socials__item">
+        <a class="socials__link" href="#">Instagram</a>
       </li>
     </ul>
-    <div class="footer__copyright">
-      <a class="footer__copyright-title" href="#">HTML Academy</a>
-      <a class="footer__copyright-link" href="#">
-        <img class="footer__copyright-image" src="https://via.placeholder.com/27x34" alt="Изображение иконки">
+    <div class="footer__copyright copyright">
+      <a class="copyright__title" href="#">HTML Academy</a>
+      <a class="copyright__link" href="#">
+        <img class="copyright__image" src="https://via.placeholder.com/27x34" alt="Изображение иконки">
       </a>
     </div>
   </footer>
