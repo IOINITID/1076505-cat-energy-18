@@ -23,8 +23,10 @@ html {
 }
 
 body {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
   margin: 0 auto;
-  width: 320px;
+  min-width: 320px;
   line-height: 1.2;
 }
 
@@ -40,13 +42,17 @@ body {
 }
 
 .button {
-  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.29;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @import "mixins.scss";

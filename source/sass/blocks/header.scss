@@ -1,9 +1,10 @@
 .header {
-  width: 320px;
+  width: 100%;
 }
 
 .header__top {
-  padding: 12px 19px 10px 20px;
+  padding-top: 12px;
+  padding-bottom: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,7 +43,6 @@
 }
 
 .navigation-list__link {
-  font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 1;
