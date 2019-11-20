@@ -4,20 +4,27 @@
 
 .header__top {
   padding-top: 12px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #e6e6e6;
 }
 
-.logo:hover,
-.logo:focus {
-  opacity: 0.8;
+.logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.8;
+  }
 }
 
-.logo:active {
-  opacity: 0.6;
+.logo {
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .menu-button {
@@ -54,11 +61,18 @@
   padding: 22px 23px 23px 23px;
 }
 
-.navigation-list__link:hover,
-.navigation-list__link:focus {
-  opacity: 0.6;
+.navigation-list__link {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
 }
 
-.navigation-list__link:active {
-  opacity: 0.3;
+.navigation-list__link {
+  &:active {
+    opacity: 0.3;
+  }
 }
