@@ -1,0 +1,26 @@
+.gift {
+  background-image: url("../../img/gift-photo-mobile@1x.jpg"), linear-gradient(to right, #71b649, #6eb346);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  min-height: 289px;
+  margin-bottom: 35px;
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 65px;
+    margin-bottom: 62px;
+  }
+}
+
+.gift__text {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+  padding: 0px 54px 42px 52px;
+}
