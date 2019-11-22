@@ -1,0 +1,142 @@
+.example {
+  background-color: #f2f2f2;
+  padding-top: 17px;
+  padding-bottom: 36px;
+}
+
+.example__title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.67;
+  color: #111111;
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.example__description {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  color: #444444;
+  margin: 0;
+  padding-right: 14px;
+  margin-bottom: 25px;
+}
+
+.example__list {
+  @include list-reset;
+  display: flex;
+  align-items: center;
+  margin-bottom: 34px;
+}
+
+.example__item {
+  border-radius: 3px;
+  border: solid 1px #cdcdcd;
+  height: 56px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &:first-child {
+    margin-right: 32px;
+  }
+}
+
+.example__item-weight {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  color: #111111;
+  text-transform: uppercase;
+  margin: auto;
+}
+
+.example__item-description {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  color: #444444;
+  margin: 0;
+  position: absolute;
+  bottom: -16px;
+  background-color: #f2f2f2;
+  max-width: 82px;
+  text-align: center;
+}
+
+.example__costs {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.43;
+  color: #111111;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.example__cats {
+  width: 100%;
+  min-height: 240px;
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+
+  &:--before {
+    position: absolute;
+    top: 0;
+    left: -20px;
+  }
+
+  &:--after {
+    position: absolute;
+    top: 0;
+    left: -20px;
+  }
+}
+
+.example__comparison {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.example__comparison-item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.progress-line {
+  border-radius: 6px;
+  border: solid 1px #cdcdcd;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 3px 5px;
+  margin-left: 21px;
+  margin-right: 15px;
+  min-width: 84px;
+}
+
+.progress-line__button {
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #68b738;
+  border: none;
+
+  &:first-child {
+    margin-right: 2px;
+  }
+}

@@ -123,7 +123,7 @@
         </li>
       </ul>
     </section>
-    <section class="main__example example">
+    <section class="container main__example example">
       <h2 class="example__title">Живой пример</h2>
       <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
         Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
@@ -140,14 +140,16 @@
       </ul>
       <p class="example__costs">Затраты на питание: 15 000 руб.</p>
       <figure class="example__cats">
-        <img class="example__cat-before" src="https://via.placeholder.com/311x232" alt="Полный кот">
-        <img class="example__cat-after" src="https://via.placeholder.com/311x232" alt="Худой кот">
+        <img class="example__cat-before" src="img/before-mobile@1x.png" alt="Полный кот">
+        <img class="example__cat-after hide" src="img/after-mobile@1x.png" alt="Худой кот">
       </figure>
       <div class="example__comparison">
         <span class="example__comparison-item example__comparison-item--before">Было</span>
         <div class="example__progress-line progress-line">
-          <button class="progress-line__button-before" type="button" title="Кнопка кот до"></button>
-          <button class="progress-line__button-after" type="button" title="Кнопка кот после "></button>
+          <button class="progress-line__button progress-line__button--before" type="button"
+            title="Кнопка кот до"></button>
+          <button class="progress-line__button progress-line__button--after hide" type="button"
+            title="Кнопка кот после "></button>
         </div>
         <span class="example__comparison-item example__comparison-item--after">Стало</span>
       </div>
