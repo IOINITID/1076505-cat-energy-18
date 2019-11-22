@@ -1,0 +1,32 @@
+.contacts {}
+
+.contacts__info {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 28px;
+  padding-bottom: 26px;
+}
+
+.contacts__intro {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #111111;
+  text-transform: uppercase;
+  margin: 0;
+  // width: 76%;
+  min-width: 124px;
+  margin-right: 17px;
+}
+
+.contacts__address {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.43;
+  color: #444444;
+  margin: 0;
+}
