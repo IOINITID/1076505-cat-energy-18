@@ -17,23 +17,16 @@
 
 .goods__item {
   border-top: 1px solid #D9D9D9;
-
-  // &:last-child {
-  //   border-bottom: 1px solid #D9D9D9;
-  // }
 }
 
 .product {
   padding-bottom: 24px;
-
 
   header {
     display: flex;
     align-items: center;
   }
 }
-
-.product__image {}
 
 .product__info {
   width: 100%;
