@@ -1,6 +1,5 @@
 .footer {
-  background-color: #f2f2f2;
-  padding-bottom: 6px;
+  background-color: $grey;
 }
 
 .footer__logo {
@@ -9,7 +8,7 @@
   justify-content: center;
   padding-top: 39px;
   padding-bottom: 31px;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $grey-dark;
 
   svg {
     width: 128px;
@@ -17,37 +16,14 @@
   }
 }
 
-.socials {
+.footer__socials {
   @include list-reset;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 22px 0 19px 0;
-  border-bottom: 1px solid #d9d9d9;
 }
 
-.socials__item--instagram {
-  margin: 0 43px;
-}
-
-.copyright__link {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 22px 0;
-  text-decoration: none;
-
-  svg {
-    width: 27px;
-    height: 34px;
-  }
-}
-
-.copyright__title {
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1;
-  color: #444444;
-  margin: 0;
+.footer__copyright {
+  padding-bottom: 6px;
 }

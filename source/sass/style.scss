@@ -1,87 +1,28 @@
-@font-face {
-  font-family: "Oswald";
-  font-weight: 400;
-  src: url("../fonts/oswaldregular.woff2") format("woff2"),
-    url("../fonts/oswaldregular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Oswald";
-  font-weight: 500;
-  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
-    url("../fonts/oswaldmedium.woff") format("woff");
-}
-
-* {
-  box-sizing: inherit;
-
-  &::before {
-    box-sizing: inherit;
-  }
-
-  &::after {
-    box-sizing: inherit;
-  }
-}
-
-html {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 14px;
-  margin: 0 auto;
-  min-width: 320px;
-  line-height: 1.2;
-  // max-width: 320px;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.button {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.29;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
+@import "normalize.scss";
+@import "fonts.scss";
+@import "variables.scss";
+@import "global.scss";
 @import "mixins.scss";
 @import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/menu-button.scss";
+@import "blocks/navigation-list.scss";
 @import "blocks/promo.scss";
 @import "blocks/features.scss";
+@import "blocks/option.scss";
 @import "blocks/nutrition.scss";
 @import "blocks/example.scss";
+@import "blocks/progress-line.scss";
 @import "blocks/contacts.scss";
 @import "blocks/map.scss";
 @import "blocks/footer.scss";
+@import "blocks/socials.scss";
+@import "blocks/copyright.scss";
 @import "blocks/goods.scss";
+@import "blocks/product.scss";
 @import "blocks/more.scss";
 @import "blocks/additionally.scss";
 @import "blocks/gift.scss";
 @import "blocks/program.scss";
 @import "blocks/form.scss";
-
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
-}
+@import "blocks/main.scss";

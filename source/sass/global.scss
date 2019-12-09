@@ -1,0 +1,59 @@
+* {
+  box-sizing: inherit;
+
+  &::before {
+    box-sizing: inherit;
+  }
+
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $default-font;
+  font-size: 14px;
+  margin: 0 auto;
+  min-width: 320px;
+  line-height: 1.2;
+  max-width: 320px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}

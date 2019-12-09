@@ -1,31 +1,17 @@
-.program {
-  padding-top: 15px;
-}
-
 .program__title {
-  // font-family: Oswald;
   font-size: 36px;
   font-weight: 400;
-  // font-stretch: normal;
-  // font-style: normal;
   line-height: 1.67;
-  // letter-spacing: normal;
-  // text-align: left;
-  color: #111111;
+  color: $black-light;
   margin: 0;
   margin-bottom: 25px;
 }
 
 .program__description {
-  // font-family: Oswald;
   font-size: 14px;
   font-weight: 400;
-  // font-stretch: normal;
-  // font-style: normal;
   line-height: 1.29;
-  // letter-spacing: normal;
-  // text-align: left;
-  color: #111111;
+  color: $black-light;
   margin: 0;
   text-transform: uppercase;
   padding-right: 54px;

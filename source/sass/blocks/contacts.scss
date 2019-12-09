@@ -1,9 +1,9 @@
 .contacts {
-  background-color: #ffffff;
-}
+  background-color: $white;
 
-.contacts--grey {
-  background-color: #f2f2f2;
+  &--grey {
+    background-color: $grey;
+  }
 }
 
 .contacts__info {
@@ -18,20 +18,19 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
-  color: #111111;
+  color: $black-light;
   text-transform: uppercase;
   margin: 0;
-  // width: 76%;
   min-width: 124px;
   margin-right: 17px;
 }
 
 .contacts__address {
-  font-family: "Arial", sans-serif;
+  font-family: $additional-font;
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
   line-height: 1.43;
-  color: #444444;
+  color: $black-lightest;
   margin: 0;
 }
