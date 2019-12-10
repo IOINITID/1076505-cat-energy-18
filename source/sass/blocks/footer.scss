@@ -1,0 +1,29 @@
+.footer {
+  background-color: $footer-background;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 39px;
+  padding-bottom: 31px;
+  border-bottom: 1px solid $footer-logo-border;
+
+  svg {
+    width: 128px;
+    height: 24px;
+  }
+}
+
+.footer__socials {
+  @include list-reset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px 0 19px 0;
+}
+
+.footer__copyright {
+  padding-bottom: 6px;
+}

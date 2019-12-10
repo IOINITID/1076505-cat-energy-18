@@ -1,0 +1,36 @@
+.contacts {
+  background-color: $contacts-background;
+}
+
+.contacts--grey {
+  background-color: $contacts-grey-background;
+}
+
+.contacts__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 28px;
+  padding-bottom: 26px;
+}
+
+.contacts__intro {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: $contacts-intro;
+  text-transform: uppercase;
+  margin: 0;
+  min-width: 124px;
+  margin-right: 17px;
+}
+
+.contacts__address {
+  font-family: $additional-font;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.43;
+  color: $contacts-address;
+  margin: 0;
+}

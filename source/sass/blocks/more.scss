@@ -1,0 +1,44 @@
+.more {
+  border-top: 1px solid $more-border;
+  border-bottom: 1px solid $more-border;
+
+  svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 23px;
+  }
+}
+
+.more__title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: $more-title;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 9px;
+}
+
+.more__text {
+  font-family: $additional-font;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.33;
+  color: $more-text;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.more__link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: $more-link;
+  background-color: $more-link-background;
+  text-decoration: none;
+  padding: 10px 0;
+}

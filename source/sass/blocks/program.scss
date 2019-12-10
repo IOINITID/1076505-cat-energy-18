@@ -1,0 +1,19 @@
+.program__title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.67;
+  color: $program-title;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.program__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  color: $program-description;
+  margin: 0;
+  text-transform: uppercase;
+  padding-right: 54px;
+  margin-bottom: 39px;
+}

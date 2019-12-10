@@ -1,0 +1,26 @@
+.features__list {
+  @include list-reset;
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 17px;
+}
+
+.features__item {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.features__item--slim svg {
+  position: absolute;
+  top: -2px;
+  left: 10px;
+}
+
+.features__item--pro svg {
+  position: absolute;
+  top: 10px;
+  left: -7px;
+}
