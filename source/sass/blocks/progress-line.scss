@@ -1,7 +1,7 @@
 .progress-line {
   border-radius: 6px;
-  border: solid 1px $grey-darker;
-  background-color: $white;
+  border: solid 1px $progress-line-border;
+  background-color: $progress-line-background;
   min-width: 84px;
 }
 
@@ -9,7 +9,7 @@
   width: 35px;
   height: 6px;
   border-radius: 3px;
-  background-color: $green;
+  background-color: $progress-line-button;
   border: none;
 
   &:first-child {

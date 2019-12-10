@@ -2,7 +2,7 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 1.67;
-  color: $black-light;
+  color: $nutrition-title;
   margin: 0;
   margin-bottom: 28px;
 }
@@ -20,7 +20,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 1.29;
-  color: $black-lightest;
+  color: $nutrition-text;
   margin: 0;
   display: flex;
   align-items: center;
@@ -34,7 +34,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $green;
+    background-color: $nutrition-text-background;
     margin-right: 20px;
   }
 }

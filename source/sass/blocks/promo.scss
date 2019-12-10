@@ -13,7 +13,7 @@
   font-weight: 400;
   line-height: 1;
   text-align: center;
-  color: $white;
+  color: $promo-text;
   margin-bottom: 25px;
 }
 
@@ -23,7 +23,7 @@
   font-weight: 400;
   line-height: 1;
   text-align: center;
-  color: $white;
+  color: $promo-text;
   text-transform: uppercase;
   margin-bottom: 28px;
 }
@@ -36,7 +36,7 @@
 
 .promo__link {
   width: 100%;
-  background-color: $green;
+  background-color: $button-background;
   padding: 10px 10px 12px 10px;
   display: block;
   margin: 0 auto;

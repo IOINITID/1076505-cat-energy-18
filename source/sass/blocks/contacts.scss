@@ -1,9 +1,9 @@
 .contacts {
-  background-color: $white;
+  background-color: $contacts-background;
+}
 
-  &--grey {
-    background-color: $grey;
-  }
+.contacts--grey {
+  background-color: $contacts-grey-background;
 }
 
 .contacts__info {
@@ -18,7 +18,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
-  color: $black-light;
+  color: $contacts-intro;
   text-transform: uppercase;
   margin: 0;
   min-width: 124px;
@@ -31,6 +31,6 @@
   font-weight: 400;
   font-style: normal;
   line-height: 1.43;
-  color: $black-lightest;
+  color: $contacts-address;
   margin: 0;
 }

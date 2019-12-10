@@ -1,6 +1,6 @@
 .more {
-  border-top: 1px solid $grey-dark;
-  border-bottom: 1px solid $grey-dark;
+  border-top: 1px solid $more-border;
+  border-bottom: 1px solid $more-border;
 
   svg {
     display: flex;
@@ -15,7 +15,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
-  color: $black-light;
+  color: $more-title;
   margin: 0;
   text-transform: uppercase;
   text-align: center;
@@ -27,7 +27,7 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 1.33;
-  color: $black-lightest;
+  color: $more-text;
   margin: 0;
   text-align: center;
   margin-bottom: 20px;
@@ -37,8 +37,8 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
-  color: $black-lightest;
-  background-color: $grey;
+  color: $more-link;
+  background-color: $more-link-background;
   text-decoration: none;
   padding: 10px 0;
 }

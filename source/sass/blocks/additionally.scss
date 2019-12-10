@@ -2,7 +2,7 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 1;
-  color: $black-light;
+  color: $additionally-title;
   margin: 0;
   margin-bottom: 34px;
 
@@ -10,7 +10,7 @@
     content: "";
     width: 53px;
     height: 3px;
-    background-color: $green;
+    background-color: $additionally-before-background;
     position: absolute;
     top: 10px;
     right: 0;
@@ -22,12 +22,12 @@
 }
 
 .additionally__item {
-  border-top: 1px solid $grey-dark;
+  border-top: 1px solid $additionally-item-border;
   padding-top: 13px;
   padding-bottom: 17px;
 
   &:last-child {
-    border-bottom: 1px solid $grey-dark;
+    border-bottom: 1px solid $additionally-item-border;
   }
 }
 
@@ -35,7 +35,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1;
-  color: $black-lighter;
+  color: $additionally-item-title;
   margin: 0;
   text-transform: uppercase;
   margin-bottom: 13px;
@@ -53,7 +53,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 1;
-  color: $black-lightest;
+  color: $additionally-item-quantity;
   margin: 0;
 }
 
@@ -62,14 +62,14 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 1;
-  color: $black-lightest;
+  color: $additionally-item-price;
 }
 
 .additionally__item-link {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
-  color: $white;
+  color: $additionally-item-link;
   padding: 10px 0;
-  background-color: $green;
+  background-color: $additionally-item-link-background;
 }

@@ -1,12 +1,12 @@
 .example {
-  background-color: $grey;
+  background-color: $example-background;
 }
 
 .example__title {
   font-size: 36px;
   font-weight: 400;
   line-height: 1.67;
-  color: $black-light;
+  color: $example-title;
   margin: 0;
   margin-bottom: 23px;
 }
@@ -16,7 +16,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 1.29;
-  color: $black-lightest;
+  color: $example-description;
   margin: 0;
   padding-right: 14px;
   margin-bottom: 25px;
@@ -31,7 +31,7 @@
 
 .example__item {
   border-radius: 3px;
-  border: solid 1px $grey-darker;
+  border: solid 1px $example-border;
   height: 56px;
   width: 100%;
   display: flex;
@@ -48,7 +48,7 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 1;
-  color: $black-light;
+  color: $example-item-weight;
   text-transform: uppercase;
   margin: auto;
 }
@@ -58,11 +58,11 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 1;
-  color: $black-lightest;
+  color: $example-item-description;
   margin: 0;
   position: absolute;
   bottom: -16px;
-  background-color: $grey;
+  background-color: $example-item-description-background;
   max-width: 82px;
   text-align: center;
 }
@@ -71,7 +71,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 1.43;
-  color: $black-light;
+  color: $example-costs;
   text-transform: uppercase;
   margin: 0;
   text-align: center;
@@ -99,7 +99,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
-  color: $black-light;
+  color: $example-comparison-item;
   text-transform: uppercase;
   border: none;
   background: none;

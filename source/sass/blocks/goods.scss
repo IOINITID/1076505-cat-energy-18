@@ -2,7 +2,7 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 1.67;
-  color: $black-light;
+  color: $goods-title;
   margin: 0;
   margin-bottom: 28px;
 }
@@ -12,5 +12,5 @@
 }
 
 .goods__item {
-  border-top: 1px solid $grey-dark;
+  border-top: 1px solid $goods-border;
 }

@@ -1,5 +1,4 @@
 .form {
-
   label {
     display: flex;
     align-items: center;
@@ -11,7 +10,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.13;
-    color: $black-lighter;
+    color: $form-text;
     margin: 0;
     margin-right: 15px;
     text-transform: uppercase;
@@ -23,8 +22,8 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.13;
-    color: $black-lightest;
-    border: solid 1px $grey-darker;
+    color: $form-input;
+    border: solid 1px $form-input-border;
     text-transform: uppercase;
     width: 100%;
     padding: 12px 15px 13px 15px;
@@ -41,7 +40,7 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 1;
-  color: $black-light;
+  color: $form-legend;
   padding: 0;
   margin-bottom: 35px;
 }
@@ -52,12 +51,12 @@
   textarea {
     width: 100%;
     min-height: 150px;
-    border: 1px solid $grey-darker;
+    border: 1px solid $form-comments-border;
     font-family: $default-font;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.13;
-    color: $black-lightest;
+    color: $form-comments;
     text-transform: uppercase;
     padding: 12px 13px;
     resize: none;
@@ -85,8 +84,8 @@
       content: "";
       width: 30px;
       height: 30px;
-      border: solid 1px $grey-darker;
-      background-color: $white;
+      border: solid 1px $form-plan-border;
+      background-color: $form-plan-background;
       border-radius: 50%;
       display: flex;
       margin-right: 16px;
@@ -97,12 +96,12 @@
 .form__radio {
   display: none;
 
-  &:checked~span {
+  &:checked ~ span {
     &::after {
       content: "";
       width: 12px;
       height: 12px;
-      background-color: $green;
+      background-color: $form-radio-background;
       background-repeat: no-repeat;
       border-radius: 50%;
       position: absolute;
@@ -115,7 +114,7 @@
 .form__checkbox {
   display: none;
 
-  &:checked~span {
+  &:checked ~ span {
     &::after {
       content: "";
       background-image: url("../img/icon-tick.svg");
@@ -140,7 +139,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.13;
-    color: $black-lighter;
+    color: $form-additionally;
     margin: 0;
     position: relative;
     display: flex;
@@ -150,8 +149,8 @@
       content: "";
       width: 30px;
       height: 30px;
-      border: 1px solid $grey-darker;
-      background-color: $white;
+      border: 1px solid $form-additionally-border;
+      background-color: $form-additionally-background;
       margin-right: 16px;
     }
   }
@@ -162,12 +161,12 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
-  color: $white;
+  color: $form-button;
   border: 0;
   text-transform: uppercase;
   margin-bottom: 21px;
   width: 100%;
-  background-color: $green;
+  background-color: $form-button-background;
   padding: 10px 0;
 }
 
@@ -176,7 +175,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 1.14;
-  color: $black-lightest;
+  color: $form-info;
   margin: 0;
   text-align: center;
   margin-bottom: 32px;
@@ -190,7 +189,7 @@
   }
 }
 
-.form__label--email {
+.form__label-email {
   position: relative;
 
   &::before {
@@ -205,7 +204,7 @@
   }
 }
 
-.form__label--phone {
+.form__label-phone {
   position: relative;
 
   &::before {

@@ -1,5 +1,5 @@
 .footer {
-  background-color: $grey;
+  background-color: $footer-background;
 }
 
 .footer__logo {
@@ -8,7 +8,7 @@
   justify-content: center;
   padding-top: 39px;
   padding-bottom: 31px;
-  border-bottom: 1px solid $grey-dark;
+  border-bottom: 1px solid $footer-logo-border;
 
   svg {
     width: 128px;

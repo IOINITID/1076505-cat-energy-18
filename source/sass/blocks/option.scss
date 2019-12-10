@@ -1,9 +1,9 @@
 .option {
-  background-color: $grey;
+  background-color: $option-background;
 }
 
 .option__title {
-  color: $black-light;
+  color: $option-title;
   font-size: 24px;
   font-weight: 400;
   line-height: 1.54;
@@ -18,7 +18,7 @@
     content: "";
     width: 50px;
     height: 50px;
-    background-color: $green;
+    background-color: $option-before-background;
     border-radius: 50%;
     margin-right: 19px;
     margin-left: 2px;
@@ -26,18 +26,18 @@
 }
 
 .option__description {
-  color: $black-lightest;
+  color: $option-description;
   font-family: $additional-font;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.29;
   margin: 0;
   padding-bottom: 22px;
-  border-bottom: 1px solid $grey-dark;
+  border-bottom: 1px solid $option-border;
 }
 
 .option__link {
-  color: $black-light;
+  color: $option-link;
   font-size: 16px;
   font-weight: 400;
   line-height: 1;
