@@ -16,3 +16,41 @@
     margin-right: 2px;
   }
 }
+
+@media (min-width: $width-tablet) {
+  .progress-line {
+    width: 428px;
+    height: 6px;
+    border: none;
+    border-radius: 2.5px;
+    background-color: #dcdcdc;
+    position: relative;
+    margin: 0;
+  }
+
+  .progress-line__button {
+    display: none;
+  }
+
+  .progress-line__slider {
+    width: 34px;
+    height: 34px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    border: 1px solid #cdcdcd;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateX(185px);
+  }
+
+  .progress-line__slider::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #68b738;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    border-radius: 50%;
+  }
+}

@@ -25,3 +25,9 @@
     height: 100%;
   }
 }
+
+@media (min-width: $width-tablet) {
+  .map {
+    min-height: 400px;
+  }
+}
