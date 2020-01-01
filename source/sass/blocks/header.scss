@@ -11,36 +11,36 @@
   border-bottom: 1px solid $header-border;
 }
 
-@media (min-width: $width-tablet) {
-  .header__top {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border: none;
-  }
+// @media (min-width: $width-tablet) {
+//   .header__top {
+//     padding-top: 24px;
+//     padding-bottom: 24px;
+//     border: none;
+//   }
 
-  .logo__mobile {
-    display: none;
-  }
+//   .logo__mobile {
+//     display: none;
+//   }
 
-  .logo__tablet {
-    display: block;
-  }
+//   .logo__tablet {
+//     display: block;
+//   }
 
-  .menu-button {
-    display: none;
-  }
+//   .menu-button {
+//     display: none;
+//   }
 
-  .header__wrapper {
-    display: flex;
-  }
+//   .header__wrapper {
+//     display: flex;
+//   }
 
-  .header__navigation-list {
-    display: flex;
-  }
+//   .header__navigation-list {
+//     display: flex;
+//   }
 
-  .header__navigation {
-    padding: 18px 0;
-    margin-left: auto;
-    padding-right: 30px;
-  }
-}
+//   .header__navigation {
+//     padding: 18px 0;
+//     margin-left: auto;
+//     padding-right: 30px;
+//   }
+// }

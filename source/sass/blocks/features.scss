@@ -25,56 +25,56 @@
   left: -7px;
 }
 
-@media (min-width: $width-tablet) {
-.features {
-  margin-bottom: 45px;
-}
+// @media (min-width: $width-tablet) {
+// .features {
+//   margin-bottom: 45px;
+// }
 
-  .features__list {
-    padding: 0 30px;
-  }
+//   .features__list {
+//     padding: 0 30px;
+//   }
 
-  .features__item--slim span {
-    width: 200px;
-    height: 200px;
-    background-color: $green;
-    border-radius: 50%;
-    position: absolute;
-    top: 16px;
-    left: 393px;
-  }
+//   .features__item--slim span {
+//     width: 200px;
+//     height: 200px;
+//     background-color: $green;
+//     border-radius: 50%;
+//     position: absolute;
+//     top: 16px;
+//     left: 393px;
+//   }
 
-  .features__item--slim svg {
-    position: absolute;
-    top: -12px;
-    left: 30px;
-    width: 140px;
-    height: 194px;
-  }
+//   .features__item--slim svg {
+//     position: absolute;
+//     top: -12px;
+//     left: 30px;
+//     width: 140px;
+//     height: 194px;
+//   }
 
-  .features__item--pro span {
-    width: 200px;
-    height: 200px;
-    background-color: $green;
-    border-radius: 50%;
-    position: absolute;
-    top: 16px;
-    left: 393px;
-  }
+//   .features__item--pro span {
+//     width: 200px;
+//     height: 200px;
+//     background-color: $green;
+//     border-radius: 50%;
+//     position: absolute;
+//     top: 16px;
+//     left: 393px;
+//   }
 
-  .features__item--pro svg {
-    position: absolute;
-    top: 43px;
-    left: -34px;
-    width: 268px;
-height: 112px;
-  }
+//   .features__item--pro svg {
+//     position: absolute;
+//     top: 43px;
+//     left: -34px;
+//     width: 268px;
+// height: 112px;
+//   }
 
-  .features__item {
-    margin-bottom: 30px;
-  }
+//   .features__item {
+//     margin-bottom: 30px;
+//   }
 
-  .features__item--pro .option__description {
-    padding-right: 258px;
-  }
-}
+//   .features__item--pro .option__description {
+//     padding-right: 258px;
+//   }
+// }

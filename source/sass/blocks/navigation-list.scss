@@ -30,17 +30,17 @@
   }
 }
 
-@media (min-width: $width-tablet) {
-  .navigation-list__item .navigation-list__link {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.39;
-    color: $black-lighter;
-    padding: 24px 0;
-    margin-left: 35px;
-  }
+// @media (min-width: $width-tablet) {
+//   .navigation-list__item .navigation-list__link {
+//     font-size: 18px;
+//     font-weight: 400;
+//     line-height: 1.39;
+//     color: $black-lighter;
+//     padding: 24px 0;
+//     margin-left: 35px;
+//   }
 
-  .navigation-list__item {
-    border: none;
-  }
-}
+//   .navigation-list__item {
+//     border: none;
+//   }
+// }
