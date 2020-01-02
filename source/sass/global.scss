@@ -20,7 +20,7 @@ body {
   margin: 0 auto;
   min-width: 320px;
   line-height: 1.2;
-  max-width: 320px;
+  max-width: 768px;
 }
 
 .visually-hidden {
@@ -58,13 +58,13 @@ body {
   display: block;
 }
 
-// @media (min-width: $width-tablet) {
-//   body {
-//     max-width: $width-tablet;
-//   }
+@media (min-width: $width-tablet) {
+  body {
+    max-width: $width-tablet;
+  }
 
-//   .container {
-//     padding-left: 30px;
-//     padding-right: 30px;
-//   }
-// }
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

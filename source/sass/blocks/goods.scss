@@ -12,5 +12,40 @@
 }
 
 .goods__item {
-  border-top: 1px solid $goods-border;
+  &:first-child {
+    border-top: 1px solid $goods-border;
+  }
+
+  border: 1px solid $goods-border;
+  border-top: none;
+}
+
+@media (min-width: $width-tablet) {
+  .goods__title {
+    font-size: 60px;
+    margin-bottom: 145px;
+  }
+
+  .goods__item {
+    border: none;
+    width: 45.8%;
+    height: 431px;
+    background-color: #f2f2f2;
+    margin-bottom: 140px;
+  }
+
+  .goods__item:first-child {
+    border: none;
+  }
+
+  .goods__item:last-of-type {
+    margin: 0;
+  }
+
+  .goods__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
 }

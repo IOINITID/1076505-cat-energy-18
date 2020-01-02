@@ -37,6 +37,7 @@
   border: 0;
   padding: 0;
   margin: 0;
+  position: relative;
 }
 
 .form__legend {
@@ -46,6 +47,23 @@
   color: $form-legend;
   padding: 0;
   margin-bottom: 35px;
+  background-color: #ffffff;
+  width: auto;
+  display: inline-flex;
+  padding-right: 22px;
+  // position: relative;
+  max-width: 205px;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: $green;
+    position: absolute;
+    top: 14px;
+    right: -20px;
+    z-index: -1;
+  }
 }
 
 .form__comments {
@@ -67,11 +85,19 @@
 }
 
 .form__user {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .form__plan {
-  margin-bottom: 39px;
+  margin-bottom: 27px;
+
+  // border: 1px solid #ededed;
+  // padding: 20px 19px 22px 19px;
+
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 20px 20px 10px 20px;
+  border: 1px solid #ededed;
 
   label {
     margin-bottom: 12px;
@@ -94,7 +120,7 @@
 .form__radio {
   display: none;
 
-  &:checked ~ span {
+  &:checked~span {
     &::after {
       content: "";
       width: 12px;
@@ -112,7 +138,7 @@
 .form__checkbox {
   display: none;
 
-  &:checked ~ span {
+  &:checked~span {
     &::after {
       content: "";
       background-image: url("../img/icon-tick.svg");
@@ -205,5 +231,185 @@
     position: absolute;
     top: 13px;
     right: 13px;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .form {
+    // padding-left: 40px;
+
+    span {
+      color: #222222;
+      font-size: 20px;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-right: 19px;
+    }
+
+    input {
+      padding: 13px 21px 15px 18px;
+      font-size: 20px;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-right: 37px;
+    }
+
+    label {
+      margin-bottom: 20px;
+    }
+  }
+
+  .form__plan {
+    padding: 23px 28px 9px 28px;
+    margin-left: 0;
+    margin-right: 37px;
+    margin-bottom: 74px;
+    margin-left: 40px;
+
+    label {
+      margin-bottom: 14px;
+    }
+  }
+
+  .form__plan span::before {
+    width: 40px;
+    height: 40px;
+    margin-right: 19px;
+  }
+
+  .form__user {
+    margin-bottom: 52px;
+    padding-left: 40px;
+  }
+
+  .form__radio:checked~span::after {
+    width: 18px;
+    height: 18px;
+    top: 11px;
+    left: 11px;
+  }
+
+  .form__legend {
+    color: #111111;
+    font-size: 36px;
+    font-weight: 400;
+    max-width: unset;
+    padding-right: 41px;
+    padding-left: 40px;
+  }
+
+  .form__legend::before {
+    top: 23px;
+    right: -30px;
+  }
+
+  .form__legend::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #68b738;
+    position: absolute;
+    top: 23px;
+    left: -30px;
+    z-index: -1;
+  }
+
+  .form__contacts {
+    margin-bottom: 44px;
+
+    .form__legend {
+      margin-bottom: 77px;
+    }
+  }
+
+  .form__label-email {
+    padding-left: 40px;
+  }
+
+  .form__label-phone {
+    padding-left: 40px;
+  }
+
+  .form__label-phone::before {
+    top: 16px;
+    right: 52px;
+  }
+
+  .form__label-email::before {
+    top: 20px;
+    right: 55px;
+  }
+
+  .form__comments textarea {
+    margin: 0 37px 0 40px;
+    color: #444444;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 13px 18px;
+    min-height: 174px;
+  }
+
+  .form__comments {
+    margin-bottom: 44px;
+
+    .form__legend {
+      margin-bottom: 77px;
+    }
+  }
+
+  .form__additionally span::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .form__additionally label {
+    padding: 0 40px;
+    width: 48.6%;
+    margin-bottom: 32px;
+  }
+
+  .form__additionally span {
+    margin: 0;
+  }
+
+  .form__additionally .form__legend {
+    margin-bottom: 58px;
+  }
+
+  .form__legend-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__checkbox:checked~span::after {
+    top: 12px;
+    left: 9px;
+  }
+
+  .form__send-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0 41px;
+    margin-bottom: 72px;
+  }
+
+  .form__button {
+    width: 283px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 13px 12px 14px 12px;
+    margin-bottom: 0;
+    margin-right: 61px;
+  }
+
+  .form__info {
+    color: #444444;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
   }
 }

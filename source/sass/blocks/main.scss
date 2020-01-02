@@ -14,7 +14,7 @@
 }
 
 .main__promo {
-  padding-top: 26px;
+  padding-top: 27px;
   margin-bottom: 197px;
 }
 
@@ -25,6 +25,7 @@
 
 .main__nutrition {
   margin-bottom: 42px;
+  padding-bottom: 52px;
 }
 
 .main__example {
@@ -38,24 +39,49 @@
 
 .main__program {
   padding-top: 15px;
+  overflow: hidden;
 }
 
 .main__goods {
   padding-top: 15px;
 }
 
-// @media (min-width: $width-tablet) {
-//   .main__promo {
-//     padding-top: 31px;
-//     margin-bottom: 0;
-//   }
+@media (min-width: $width-tablet) {
+  .main__promo {
+    padding-top: 31px;
+    margin-bottom: 0;
+  }
 
-//   .main__option {
-//     padding: 76px 53px 62px 53px;
-//   }
+  .main__option {
+    padding: 76px 53px 62px 53px;
+  }
 
-//   .main__example {
-//     padding-top: 0;
-//     padding-bottom: 74px;
-//   }
-// }
+  .main__example {
+    padding-top: 0;
+    padding-bottom: 74px;
+  }
+
+  .main__goods {
+    padding-top: 11px;
+  }
+
+  .main__more {
+    padding-top: 54px;
+  }
+
+  .main__additionally {
+    padding-top: 66px;
+    padding-left: 28px;
+    // padding-bottom: 24px;
+    padding-bottom: 69px;
+  }
+
+  .main__gift {
+    // margin-bottom: 32px;
+    margin-bottom: 76px;
+  }
+
+  .main__program {
+    padding-top: 11px;
+  }
+}

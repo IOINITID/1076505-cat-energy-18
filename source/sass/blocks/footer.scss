@@ -28,24 +28,24 @@
   padding-bottom: 6px;
 }
 
-// @media (min-width: $width-tablet) {
-//   .footer {
-//     display: flex;
-//     justify-content: space-between;
-//     padding: 31px 30px 36px 30px;
-//   }
+@media (min-width: $width-tablet) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 30px 36px 30px;
+  }
 
-//   .footer__logo {
-//     padding: 0;
-//     border: none;
-//   }
+  .footer__logo {
+    padding: 0;
+    border: none;
+  }
 
-//   .footer__socials {
-//     padding: 0;
-//     border: none;
-//   }
+  .footer__socials {
+    padding: 0;
+    border: none;
+  }
 
-//   .footer__copyright {
-//     padding: 0;
-//   }
-// }
+  .footer__copyright {
+    padding: 0;
+  }
+}

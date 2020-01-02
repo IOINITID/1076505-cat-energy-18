@@ -17,3 +17,22 @@
   padding-right: 54px;
   margin-bottom: 39px;
 }
+
+@media (min-width: $width-tablet) {
+  .program__title {
+    color: #111111;
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 38px;
+  }
+
+  .program__description {
+    color: #111111;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 0 340px 0 40px;
+    line-height: 1.4;
+    margin-bottom: 67px;
+  }
+}

@@ -19,3 +19,9 @@
   color: $copyright-title;
   margin: 0;
 }
+
+@media (min-width: $width-tablet) {
+.copyright__title {
+  margin-right: 23px;
+}
+}

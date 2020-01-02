@@ -11,3 +11,13 @@
     opacity: 0.6;
   }
 }
+
+.logo__tablet {
+  display: none;
+}
+
+@media (min-width: $width-tablet) {
+  .logo__tablet {
+    display: flex;
+  }
+}
