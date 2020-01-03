@@ -117,7 +117,10 @@
   .promo__image--desktop {
     display: flex;
     position: absolute;
-    top: 142px;
-    left: 560px;
+    top: -82px;
+    left: 490px;
+  }
+  .promo-wrapper {
+    position: relative;
   }
 }

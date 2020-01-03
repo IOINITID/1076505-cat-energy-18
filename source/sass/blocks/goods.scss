@@ -1,3 +1,7 @@
+.goods .container {
+  padding: 0;
+}
+
 .goods__title {
   font-size: 36px;
   font-weight: 400;
@@ -5,6 +9,7 @@
   color: $goods-title;
   margin: 0;
   margin-bottom: 28px;
+  padding: 0 20px;
 }
 
 .goods__list {
@@ -12,18 +17,24 @@
 }
 
 .goods__item {
-  &:first-child {
-    border-top: 1px solid $goods-border;
-  }
-
+  padding: 0 20px;
   border: 1px solid $goods-border;
   border-top: none;
 }
 
+.goods__item:first-child {
+  border-top: 1px solid $goods-border;
+}
+
 @media (min-width: $width-tablet) {
+  .goods .container {
+    padding: 0 30px;
+  }
+
   .goods__title {
     font-size: 60px;
     margin-bottom: 145px;
+    padding: 0;
   }
 
   .goods__item {
@@ -32,6 +43,7 @@
     height: 431px;
     background-color: #f2f2f2;
     margin-bottom: 140px;
+    padding: 0;
   }
 
   .goods__item:first-child {
@@ -46,6 +58,25 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .goods .container {
+    padding: 0 40px;
+  }
+
+  .goods__list {
+    padding: 0;
+  }
+
+  .goods__item {
+    width: 245px;
+    margin-bottom: 0;
+  }
+
+  .goods__item:first-child {
+    margin-bottom: 143px;
   }
 }

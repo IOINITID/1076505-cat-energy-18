@@ -36,3 +36,10 @@
     margin-bottom: 67px;
   }
 }
+
+@media (min-width: $width-desktop) {
+  .program__description {
+    padding: 0;
+    padding-right: 890px;
+  }
+}

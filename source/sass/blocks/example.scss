@@ -38,10 +38,10 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+}
 
-  &:first-child {
-    margin-right: 32px;
-  }
+.example__item:first-child {
+  margin-right: 32px;
 }
 
 .example__item-weight {
@@ -259,11 +259,13 @@
     width: 50%;
     background-position: 101% 2px;
     background-size: unset;
+    display: flex;
   }
 
   .example__cats {
     width: 708px;
     margin: 0 auto;
+    margin-bottom: 29px;
   }
 }
 
@@ -272,21 +274,26 @@
     padding-right: 785px;
     margin-bottom: 68px;
   }
+
   .example__title {
     margin-bottom: 147px;
   }
+
   .example__costs {
     padding: 0;
     margin: 0;
     flex-direction: row;
-    span {
-      margin-left: 64px;
-    }
   }
+
+  .example__costs span {
+    margin-left: 64px;
+  }
+
   .example__info {
     flex-direction: column;
     width: 367px;
   }
+
   .example__list {
     margin-bottom: 56px;
   }
@@ -299,21 +306,26 @@
     top: -50px;
     right: 57px;
   }
+
   .example__cat-before {
     background-position: -27px 2px;
   }
+
   .example__cat-after {
     background-position: 104% 0px
   }
+
   .example__comparison {
     position: absolute;
     bottom: 75px;
     right: 111px;
-}
-.example {
-  background: linear-gradient(to bottom, #ffffff 22.7%, #f2f2f2 22.7%), linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
-}
-.example__item-description {
-  background-color: #f2f2f2;
-}
+  }
+
+  .example {
+    background: linear-gradient(to bottom, #ffffff 22.7%, #f2f2f2 22.7%), linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+  }
+
+  .example__item-description {
+    background-color: #f2f2f2;
+  }
 }

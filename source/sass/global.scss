@@ -1,13 +1,7 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
-
-  &::before {
-    box-sizing: inherit;
-  }
-
-  &::after {
-    box-sizing: inherit;
-  }
 }
 
 html {
@@ -20,7 +14,6 @@ body {
   margin: 0 auto;
   min-width: 320px;
   line-height: 1.2;
-  max-width: 768px;
 }
 
 .visually-hidden {
@@ -59,10 +52,6 @@ body {
 }
 
 @media (min-width: $width-tablet) {
-  body {
-    max-width: $width-tablet;
-  }
-
   .container {
     padding-left: 30px;
     padding-right: 30px;
@@ -72,12 +61,14 @@ body {
 
 @media (min-width: $width-desktop) {
   body {
-    // max-width: $width-desktop;
     max-width: 100%;
   }
 
   .container {
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1300px;
+    min-width: 1300px;
+    margin: 0 auto;
   }
 }

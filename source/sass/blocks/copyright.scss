@@ -4,11 +4,11 @@
   justify-content: space-between;
   padding: 22px 0;
   text-decoration: none;
+}
 
-  svg {
-    width: 27px;
-    height: 34px;
-  }
+.copyright__link svg {
+  width: 27px;
+  height: 34px;
 }
 
 .copyright__title {
@@ -21,7 +21,7 @@
 }
 
 @media (min-width: $width-tablet) {
-.copyright__title {
-  margin-right: 23px;
-}
+  .copyright__title {
+    margin-right: 23px;
+  }
 }

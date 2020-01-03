@@ -9,11 +9,11 @@
   padding-top: 39px;
   padding-bottom: 31px;
   border-bottom: 1px solid $footer-logo-border;
+}
 
-  svg {
-    width: 128px;
-    height: 24px;
-  }
+.footer__logo svg {
+  width: 128px;
+  height: 24px;
 }
 
 .footer__socials {
@@ -29,10 +29,10 @@
 }
 
 @media (min-width: $width-tablet) {
-  .footer {
+  .footer-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 35px 30px 36px 30px;
+    padding: 35px 0 36px 0;
   }
 
   .footer__logo {
@@ -51,9 +51,9 @@
 }
 
 @media (min-width: $width-desktop) {
-  .footer {
-    padding-left: 110px;
-    padding-right: 110px;
-    padding-top: 38px;
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 0;
   }
 }

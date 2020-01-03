@@ -16,18 +16,18 @@
   text-decoration: none;
   display: block;
   padding: 22px 23px 23px 23px;
+}
 
-  &:hover {
-    opacity: 0.6;
-  }
+.navigation-list__link:hover {
+  opacity: 0.6;
+}
 
-  &:focus {
-    opacity: 0.6;
-  }
+.navigation-list__link:focus {
+  opacity: 0.6;
+}
 
-  &:active {
-    opacity: 0.3;
-  }
+.navigation-list__link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $width-tablet) {
@@ -62,6 +62,14 @@
     font-size: 20px;
     font-weight: 400;
     text-transform: uppercase;
+  }
+
+  .navigation-list__item--inner .navigation-list__link {
+    color: #000000;
+  }
+
+  .navigation-list__item--inner .navigation-list__link--active::before {
+    border-color: $green;
   }
 
   .navigation-list__link--active::before {

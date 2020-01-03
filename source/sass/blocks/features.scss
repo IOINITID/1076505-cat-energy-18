@@ -7,10 +7,10 @@
 
 .features__item {
   margin-bottom: 20px;
+}
 
-  &:last-child {
-    margin-bottom: 0;
-  }
+.features__item:last-child {
+  margin-bottom: 0;
 }
 
 .features__item--slim svg {
@@ -83,17 +83,21 @@
   .features__list {
     display: flex;
     justify-content: space-between;
-    padding: 0 110px;
+    padding: 0 40px;
+    margin: 0 auto;
   }
+
   .features__item {
     width: 570px;
   }
+
   .features__item--slim span {
     width: 100px;
     height: 100px;
     top: -29px;
     left: 0;
   }
+
   .features__item--slim svg {
     width: 70px;
     height: 97px;
@@ -107,6 +111,7 @@
     top: -29px;
     left: 0;
   }
+
   .features__item--pro svg {
     width: 134px;
     height: 56px;

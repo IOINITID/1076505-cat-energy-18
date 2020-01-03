@@ -3,14 +3,14 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   min-height: 289px;
+}
 
-  span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 65px;
-    margin-bottom: 62px;
-  }
+.gift span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 65px;
+  margin-bottom: 62px;
 }
 
 .gift__text {
@@ -34,14 +34,13 @@
     align-items: center;
     padding: 0 91px;
     justify-content: space-between;
-    // max-width: 768px;
-    // margin: 0 auto;
     background-size: cover;
     margin: 0 30px;
     min-height: 200px;
-    span {
-      padding-top: 55px;
-    }
+  }
+
+  .gift span {
+    padding-top: 55px;
   }
 
   .gift__text {
@@ -50,6 +49,28 @@
     margin: 0;
     padding-left: 86px;
   }
+}
 
+@media (min-width: $width-desktop) {
+  .gift {
+    background-image: url("../img/gift-photo-mobile@1x.jpg");
+    background-position: 85% 0;
+    width: 245px;
+    height: 289px;
+    height: 289px;
+    padding: 0;
+    margin: 0;
+    margin-left: 80px;
+    flex-direction: column;
+  }
 
+  .gift span {
+    padding-top: 65px;
+  }
+
+  .gift__text {
+    padding: 0 50px;
+    margin-bottom: 42px;
+    text-align: center;
+  }
 }

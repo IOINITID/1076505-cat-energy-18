@@ -10,7 +10,6 @@
 .main__additionally {
   position: relative;
   padding-top: 28px;
-  padding-bottom: 39px;
 }
 
 .main__promo {
@@ -25,7 +24,6 @@
 
 .main__nutrition {
   margin-bottom: 42px;
-  padding-bottom: 52px;
 }
 
 .main__example {
@@ -72,13 +70,13 @@
   .main__additionally {
     padding-top: 66px;
     padding-left: 28px;
-    // padding-bottom: 24px;
     padding-bottom: 69px;
   }
 
   .main__gift {
-    // margin-bottom: 32px;
-    margin-bottom: 76px;
+    margin-bottom: 7px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .main__program {
@@ -92,7 +90,7 @@
   }
 
   .main__nutrition {
-    margin-bottom: 75px;
+    margin-bottom: 24px;
     padding-bottom: 0;
     border: none;
   }
@@ -104,9 +102,24 @@
     flex-direction: column;
     position: relative;
   }
+
   .main__map {
     position: relative;
     margin-top: -296px;
     z-index: -1;
-}
+  }
+
+  .main__goods {
+    padding-top: 168px;
+  }
+
+  .main__additionally {
+    padding-top: 74px;
+    padding-left: 0;
+    padding-bottom: 18px;
+  }
+
+  .main__program {
+    padding-top: 168px;
+  }
 }
