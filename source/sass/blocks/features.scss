@@ -41,7 +41,8 @@
     border-radius: 50%;
     position: absolute;
     top: 16px;
-    left: 393px;
+    left: unset;
+    right: 9px;
   }
 
   .features__item--slim svg {
@@ -59,7 +60,8 @@
     border-radius: 50%;
     position: absolute;
     top: 16px;
-    left: 393px;
+    left: unset;
+    right: 7px;
   }
 
   .features__item--pro svg {
