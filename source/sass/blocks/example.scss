@@ -197,9 +197,7 @@
   .example__costs {
     font-size: 20px;
     font-weight: 400;
-    line-height: 1;
     color: #111111;
-    margin-left: auto;
     margin: 0;
     align-self: flex-start;
     margin-left: auto;
@@ -312,7 +310,7 @@
   }
 
   .example__cat-after {
-    background-position: 104% 0px
+    background-position: 104% 0;
   }
 
   .example__comparison {
