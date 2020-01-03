@@ -167,3 +167,37 @@
     margin: 0;
   }
 }
+
+@media (min-width: $width-desktop) {
+  .nutrition__list {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    padding-right: 0;
+  }
+
+  .nutrition__item {
+    width: 246px;
+    margin-bottom: 0;
+  }
+
+  .nutrition__title {
+    margin-bottom: 70px;
+  }
+
+  .nutrition__item:nth-child(1):before {
+    right: 17px;
+  }
+
+  .nutrition__item:nth-child(2):before {
+    right: 0;
+  }
+
+  .nutrition__item:nth-child(3):before {
+    right: 0;
+  }
+
+  .nutrition__item:nth-child(4):before {
+    right: -3px;
+  }
+
+}

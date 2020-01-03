@@ -16,8 +16,30 @@
   display: none;
 }
 
+.logo__desktop {
+  display: none;
+}
+
 @media (min-width: $width-tablet) {
+  .logo__mobile {
+    display: none;
+  }
+
   .logo__tablet {
+    display: flex;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .logo__mobile {
+    display: none;
+  }
+
+  .logo__tablet {
+    display: none;
+  }
+
+  .logo__desktop {
     display: flex;
   }
 }

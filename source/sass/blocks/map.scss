@@ -34,3 +34,10 @@
     background-image: url("../img/bg-map-tablet@1x.png");
   }
 }
+
+@media (min-width: $width-desktop) {
+  .map {
+    min-height: 397px;
+    background-image: url("../../img/bg-map-desktop@1x.png");
+  }
+}

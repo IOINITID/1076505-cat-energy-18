@@ -102,3 +102,15 @@
     margin-left: 23px;
   }
 }
+
+@media (min-width: $width-desktop) {
+  .option__title {
+    padding-left: 161px;
+    margin-bottom: 74px;
+  }
+
+  .option__description {
+    padding-right: 0;
+    margin-bottom: 11px;
+  }
+}

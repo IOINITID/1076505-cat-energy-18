@@ -85,3 +85,28 @@
     padding-top: 11px;
   }
 }
+
+@media (min-width: $width-desktop) {
+  .main__promo {
+    padding-top: 222px;
+  }
+
+  .main__nutrition {
+    margin-bottom: 75px;
+    padding-bottom: 0;
+    border: none;
+  }
+
+  .main__example {
+    padding-top: 0;
+    display: flex;
+    padding-bottom: 21px;
+    flex-direction: column;
+    position: relative;
+  }
+  .main__map {
+    position: relative;
+    margin-top: -296px;
+    z-index: -1;
+}
+}

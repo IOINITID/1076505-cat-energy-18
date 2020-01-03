@@ -68,3 +68,16 @@ body {
     padding-right: 30px;
   }
 }
+
+
+@media (min-width: $width-desktop) {
+  body {
+    // max-width: $width-desktop;
+    max-width: 100%;
+  }
+
+  .container {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}

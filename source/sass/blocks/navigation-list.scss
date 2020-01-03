@@ -53,3 +53,22 @@
     bottom: 15px;
   }
 }
+
+@media (min-width: $width-desktop) {
+  .navigation-list__item .navigation-list__link {
+    margin-right: 35px;
+    margin-left: 0;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .navigation-list__link--active::before {
+    border-color: #ffffff;
+  }
+
+  .navigation-list__item:last-child .navigation-list__link {
+    margin-right: 0;
+  }
+}
