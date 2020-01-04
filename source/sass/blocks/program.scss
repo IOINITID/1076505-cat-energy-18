@@ -1,45 +1,58 @@
 .program__title {
   font-size: 36px;
+  line-height: 60px;
+  color: $black-light;
   font-weight: 400;
-  line-height: 1.67;
-  color: $program-title;
-  margin: 0;
+  font-family: $default-font;
+  margin-top: 15px;
   margin-bottom: 25px;
 }
 
-.program__description {
+.program__intro {
   font-size: 14px;
+  line-height: 18px;
+  color: $black-light;
   font-weight: 400;
-  line-height: 1.29;
-  color: $program-description;
-  margin: 0;
+  font-family: $default-font;
   text-transform: uppercase;
-  padding-right: 54px;
+  padding-right: 10px;
   margin-bottom: 39px;
 }
 
-@media (min-width: $width-tablet) {
+@media (min-width: $tablet-width) {
   .program__title {
-    color: #111111;
     font-size: 60px;
-    font-weight: 400;
-    margin-bottom: 38px;
+    margin-top: 12px;
+    margin-bottom: 55px;
   }
 
-  .program__description {
-    color: #111111;
+  .program__intro {
     font-size: 20px;
-    font-weight: 400;
-    text-transform: uppercase;
-    padding: 0 340px 0 40px;
-    line-height: 1.4;
-    margin-bottom: 67px;
+    line-height: 30px;
+    width: 330px;
+    margin-left: 40px;
+    margin-bottom: 66px;
+  }
+
+  .program__form {
+    width: 630px;
+    margin-left: 41px;
+    margin-bottom: 60px;
   }
 }
 
-@media (min-width: $width-desktop) {
-  .program__description {
-    padding: 0;
-    padding-right: 890px;
+@media (min-width: $desktop-width) {
+  .program__form {
+    width: auto;
+    margin-left: 0;
+    margin-bottom: 70px;
+  }
+
+  .program__title {
+    margin-top: 51px;
+  }
+
+  .program__intro {
+    margin-left: 0;
   }
 }

@@ -1,0 +1,110 @@
+.control__label {
+  font-size: 16px;
+  line-height: 18px;
+  color: $black-lighter;
+  font-weight: 400;
+  font-family: $default-font;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 46px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.control__label::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  border: 1px solid $grey-darker;
+  background-color: $main-background;
+}
+
+.control__input[type="radio"] ~ .control__label::before {
+  border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked ~ .control__label::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  border-radius: 50%;
+  background-color: $green;
+}
+
+.control__input[type="checkbox"]:checked ~ .control__label::after {
+  content: "";
+  width: 21px;
+  height: 16px;
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+}
+
+.control__input:focus ~ .control__label::before {
+  border: 2px solid $black-lightest;
+}
+
+.control__input:active:enabled ~ .control__label:not(:active) .control__text,
+.control__input:active:enabled ~ .control__label:not(:active)::before,
+.control__input:active:enabled ~ .control__label:not(:active)::after,
+.control__input:active:enabled ~ .control__label:active .custom-control__text,
+.control__input:active:enabled ~ .control__label:active::before,
+.control__input:active:enabled ~ .control__label:active::after {
+  opacity: 0.3;
+}
+
+.control__label:hover::before {
+  border-color: $grey-lighter;
+}
+
+.control__input:disabled ~ .control__label::before {
+  background-color: $additional-background;
+  border-color: $grey-darker;
+}
+
+.control__input:disabled ~ .control__label .control__text,
+.control__input:disabled ~ .control__label::after {
+  opacity: 0.3;
+}
+
+.control__text {
+  display: block;
+  pointer-events: none;
+}
+
+@media (min-width: $tablet-width) {
+  .control__label {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 9px;
+    padding-bottom: 13px;
+    padding-left: 60px;
+  }
+
+  .control__label::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .control__input[type="radio"]:checked ~ .control__label::after {
+    width: 18px;
+    height: 18px;
+    left: 11px;
+    top: 11px;
+  }
+
+  .control__input[type="checkbox"]:checked ~ .control__label::after {
+    top: 12px;
+    left: 10px;
+  }
+}

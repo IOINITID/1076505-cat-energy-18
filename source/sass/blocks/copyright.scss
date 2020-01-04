@@ -1,27 +1,32 @@
 .copyright__link {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 22px 0;
-  text-decoration: none;
+  align-items: center;
 }
 
-.copyright__link svg {
+.copyright__link:hover .copyright__image {
+  fill: $green-light;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+}
+
+.copyright__text {
+  font-size: 16px;
+  line-height: 16px;
+  pointer-events: none;
+}
+
+.copyright__image {
   width: 27px;
   height: 34px;
+  fill: $grey-darkest;
+  pointer-events: none;
 }
 
-.copyright__title {
-  font-family: $additional-font;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1;
-  color: $copyright-title;
-  margin: 0;
-}
-
-@media (min-width: $width-tablet) {
-  .copyright__title {
-    margin-right: 23px;
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    margin-right: 24px;
   }
 }

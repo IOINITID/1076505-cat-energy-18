@@ -1,0 +1,77 @@
+.menu-list {
+  @include list-reset;
+}
+
+.menu-list__item {
+  font-size: 20px;
+  line-height: 20px;
+  color: $black-light;
+  font-weight: 500;
+  font-family: $default-font;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+
+.menu-list__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: -23px;
+  border-bottom: 1px solid $grey-light;
+}
+
+.menu-list__item a[href]:hover {
+  opacity: 0.6;
+}
+
+.menu-list__item a[href]:active {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 516px;
+  }
+
+  .menu-list__item {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    padding-top: 18px;
+    padding-bottom: 7px;
+    margin-left: 34px;
+  }
+
+  .menu-list__item::before {
+    display: none;
+  }
+
+  .menu-list__item--active {
+    border-bottom: 2px solid $green;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu-list {
+    max-width: 610px;
+  }
+
+  .menu-list--index .menu-list__item {
+    color: $white;
+  }
+
+  .menu-list--index .menu-list__item--active {
+    border-color: $white;
+  }
+
+  .menu-list__item {
+    font-size: 20px;
+    padding-top: 19px;
+    padding-bottom: 8px;
+  }
+}

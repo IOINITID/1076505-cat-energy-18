@@ -1,9 +1,15 @@
+.nutrition {
+  padding-top: 17px;
+  padding-bottom: 22px;
+}
+
 .nutrition__title {
   font-size: 36px;
+  line-height: 60px;
+  color: $black-light;
   font-weight: 400;
-  line-height: 1.67;
-  color: $nutrition-title;
-  margin: 0;
+  font-family: $default-font;
+  margin-top: 0;
   margin-bottom: 28px;
 }
 
@@ -12,180 +18,128 @@
 }
 
 .nutrition__item {
-  margin-bottom: 20px;
+  line-height: 18px;
+  padding-left: 80px;
+  padding-top: 2px;
+  margin-bottom: 24px;
+  position: relative;
 }
 
-.nutrition__text {
-  font-family: $additional-font;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.29;
-  color: $nutrition-text;
-  margin: 0;
-  display: flex;
-  align-items: center;
-}
-
-.nutrition__text::before {
+.nutrition__item::before {
   content: "";
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  min-width: 60px;
+  width: 60px;
   height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: $nutrition-text-background;
-  margin-right: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: $green;
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: center;
 }
 
-.nutrition__text--useful::before {
+.nutrition__item--useful::before {
   background-image: url("../img/advantage-leaf@1x.png");
 }
 
-.nutrition__text--fast::before {
+.nutrition__item--fast::before {
   background-image: url("../img/advantage-powder@1x.png");
 }
 
-.nutrition__text--replace::before {
+.nutrition__item--replace::before {
   background-image: url("../img/advantage-dining@1x.png");
 }
 
-.nutrition__text--improvements::before {
+.nutrition__item--improvements::before {
   background-image: url("../img/advantage-clock@1x.png");
 }
 
-@media (min-width: $width-tablet) {
+@media (min-width: $tablet-width) {
   .nutrition {
-    border-bottom: 1px solid $grey-light;
+    padding-top: 45px;
+    padding-bottom: 8px;
   }
 
   .nutrition__title {
     font-size: 60px;
-    font-weight: 400;
-    line-height: 1;
-    color: #111111;
-    margin-bottom: 72px;
-  }
-
-  .nutrition__text {
-    font-family: "Arial", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #444444;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0;
-  }
-
-  .nutrition__text::before {
-    min-width: 80px;
-    height: 80px;
-    margin: 0;
-    margin-bottom: 32px;
+    line-height: 60px;
+    margin-bottom: 33px;
   }
 
   .nutrition__list {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
-    padding-right: 68px;
-    padding-bottom: 52px;
   }
 
   .nutrition__item {
-    width: 40%;
-    margin: 0;
-    padding-bottom: 50px;
-    margin-bottom: 83px;
-    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    width: 245px;
+    min-height: 258px;
+    padding-top: 39px;
+    margin-bottom: 20px;
+    padding-left: 0;
+    padding-right: 79px;
   }
 
-  .nutrition__item--useful::before {
+  .nutrition__item::before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    position: static;
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  .nutrition__item::after {
+    font-size: 281px;
+    line-height: 281px;
+    color: $additional-background;
+    font-weight: 400;
+    font-family: $default-font;
+    position: absolute;
+    top: 0;
+    left: 113px;
+    z-index: -1;
+  }
+
+  .nutrition__item--useful::after {
     content: "1";
-    color: #f2f2f2;
-    font-size: 281px;
-    font-weight: 400;
-    position: absolute;
-    top: -67px;
-    right: 27px;
-    z-index: -1;
   }
 
-  .nutrition__item--fast::before {
+  .nutrition__item--fast::after {
     content: "2";
-    color: #f2f2f2;
-    font-size: 281px;
-    font-weight: 400;
-    position: absolute;
-    top: -67px;
-    right: 10px;
-    z-index: -1;
   }
 
-  .nutrition__item--replace::before {
+  .nutrition__item--replace::after {
     content: "3";
-    color: #f2f2f2;
-    font-size: 281px;
-    font-weight: 400;
-    position: absolute;
-    top: -67px;
-    right: 10px;
-    z-index: -1;
   }
 
-  .nutrition__item--improvements::before {
+  .nutrition__item--improvements::after {
     content: "4";
-    color: #f2f2f2;
-    font-size: 281px;
-    font-weight: 400;
-    position: absolute;
-    top: -67px;
-    right: 7px;
-    z-index: -1;
-  }
-
-  .nutrition__item--replace {
-    margin: 0;
-  }
-
-  .nutrition__item--improvements {
-    margin: 0;
   }
 }
 
-@media (min-width: $width-desktop) {
+@media (min-width: $desktop-width) {
+  .nutrition {
+    padding-top: 43px;
+    padding-bottom: 7px;
+  }
+
   .nutrition__list {
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    padding-right: 0;
+    justify-content: flex-start;
   }
 
   .nutrition__item {
-    width: 246px;
-    margin-bottom: 0;
+    width: 245px;
+    min-height: 228px;
+    padding-right: 0;
+    margin-right: calc(33.3333% - 980px / 3);
   }
 
-  .nutrition__title {
-    margin-bottom: 70px;
-  }
-
-  .nutrition__item--useful::before {
-    right: 17px;
-  }
-
-  .nutrition__item--fast::before {
-    right: 0;
-  }
-
-  .nutrition__item--replace::before {
-    right: 0;
-  }
-
-  .nutrition__item--improvements::before {
-    right: -3px;
+  .nutrition__item:nth-child(4n) {
+    margin-right: 0;
   }
 }
