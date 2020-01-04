@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
   <header class="header">
     <div class="header__wrapper container">
       <a class="header__logo" title="Главная страница">
@@ -42,9 +41,10 @@
         <h1 class="promo__title">Функциональное питание для котов</h1>
         <p class="promo__text">Занялся собой? Займись котом!</p>
         <picture>
-          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-          <img class="promo__image" src="img/index-can-mobile@1x.png" width="280" height="271"
+          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+          <img class="promo__image" src="img/index-can-mobile@1x.png"
+            srcset="img/index-can-mobile@1x.png 1x, img/index-can-mobile@2x.png 2x" width="280" height="271"
             alt="Cat Energy Pro с курицей.">
         </picture>
         <a class="promo__link" href="form.html">Подобрать программу</a>
@@ -111,16 +111,18 @@
           <ul class="example__gallery">
             <li class="example__image example__image--before example__image--active">
               <picture>
-                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
-                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-                <img src="img/before-mobile@1x.png" width="320" height="240" alt="Полный кот.">
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img src="img/before-mobile@1x.png" srcset="img/before-mobile@1x.png 1x, img/before-mobile@2x.png 2x"
+                  width="320" height="240" alt="Полный кот.">
               </picture>
             </li>
             <li class="example__image example__image--after">
               <picture>
-                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
-                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
-                <img src="img/after-mobile@1x.png" width="320" height="240" alt="Худой кот.">
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                <img src="img/after-mobile@1x.png" srcset="img/after-mobile@1x.png 1x, img/after-mobile@2x.png 2x"
+                  width="320" height="240" alt="Худой кот.">
               </picture>
             </li>
           </ul>
@@ -139,9 +141,10 @@
         <p class="contacts__address"><span>ул. Большая Конюшенная, д. 19/8</span><span>Санкт-Петербург</span></p>
       </div>
       <picture>
-        <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
-        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
-        <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="400"
+        <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+        <img class="contacts__map" src="img/bg-map-mobile@1x.png"
+          srcset="img/bg-map-mobile@1x.png 1x, img/bg-map-mobile@2x.png 2x" width="320" height="400"
           alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
       </picture>
       <iframe
