@@ -110,13 +110,13 @@
   position: absolute;
 }
 
-.form__field--email input:focus:invalid+svg,
-.form__field--phone input:focus:invalid+svg {
+.form__field--email input:focus:invalid + svg,
+.form__field--phone input:focus:invalid + svg {
   fill: $red-light;
 }
 
-.form__field--email input:focus+svg,
-.form__field--phone input:focus+svg {
+.form__field--email input:focus + svg,
+.form__field--phone input:focus + svg {
   fill: $green-light;
 }
 
