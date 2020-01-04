@@ -1,26 +1,224 @@
 .features__list {
   @include list-reset;
-  width: 100%;
-  padding: 0 20px;
-  margin-bottom: 17px;
 }
 
 .features__item {
-  margin-bottom: 20px;
+  padding: 20px;
+  padding-bottom: 17px;
+  background-color: $additional-background;
+  position: relative;
+}
 
-  &:last-child {
-    margin-bottom: 0;
+.features__item::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 22px;
+  top: 24px;
+  border-radius: 50%;
+  background-color: $green;
+}
+
+.features__item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+.features__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.features__item--slim::after {
+  width: 35px;
+  height: 49px;
+  left: 30px;
+  top: 23px;
+  background-image: url("../img/icon-cat-slim.svg");
+}
+
+.features__item--pro::after {
+  width: 67px;
+  height: 28px;
+  left: 13px;
+  top: 35px;
+  background-image: url("../img/icon-cat-pro.svg");
+}
+
+.features__title {
+  font-size: 24px;
+  line-height: 37px;
+  color: $black-light;
+  font-weight: 400;
+  font-family: $default-font;
+  text-transform: uppercase;
+  margin-left: 71px;
+  margin-top: 10px;
+  margin-bottom: 29px;
+}
+
+.features__description {
+  line-height: 18px;
+  padding-bottom: 22px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $grey-dark;
+}
+
+.features__link {
+  font-size: 16px;
+  line-height: 16px;
+  color: $black-light;
+  font-weight: 400;
+  font-family: $default-font;
+  text-transform: uppercase;
+}
+
+.features__link::after {
+  content: "";
+  width: 24px;
+  height: 13px;
+  margin-left: 13px;
+  display: inline-block;
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+}
+
+.features__link:hover::after {
+  width: 33px;
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+}
+
+.features__link:active {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .features__item {
+    padding: 50px;
+    min-height: 272px;
+  }
+
+  .features__item::before {
+    width: 200px;
+    height: 200px;
+    top: 92px;
+    right: 62px;
+    left: auto;
+  }
+
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .features__wrapper {
+    width: 372px;
+    padding-left: 2px;
+  }
+
+  .features__description {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 0;
+    margin-bottom: 56px;
+    border: none;
+  }
+
+  .features__item--pro .features__wrapper {
+    width: 343px;
+  }
+
+  .features__item--pro::before {
+    top: 91px;
+    right: 60px;
+  }
+
+  .features__item--pro::after {
+    width: 268px;
+    height: 112px;
+    top: 135px;
+    right: 28px;
+    left: auto;
+  }
+
+  .features__item--slim::after {
+    width: 140px;
+    height: 194px;
+    top: 80px;
+    right: 92px;
+    left: auto;
+  }
+
+  .features__title {
+    font-size: 36px;
+    line-height: 37px;
+    margin-left: 1px;
+    margin-top: 26px;
+    margin-bottom: 25px;
+  }
+
+  .features__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .features__link::after {
+    margin-left: 25px;
   }
 }
 
-.features__item--slim svg {
-  position: absolute;
-  top: -2px;
-  left: 10px;
-}
+@media (min-width: $desktop-width) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-.features__item--pro svg {
-  position: absolute;
-  top: 10px;
-  left: -7px;
+  .features__item {
+    width: 470px;
+    margin-bottom: 30px;
+  }
+
+  .features__item::before {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+    right: auto;
+  }
+
+  .features__item--slim::after {
+    width: 70px;
+    height: 97px;
+    top: 41px;
+    left: 66px;
+    right: auto;
+  }
+
+  .features__item--pro .features__wrapper {
+    width: auto;
+  }
+
+  .features__item--pro::after {
+    width: 134px;
+    height: 56px;
+    top: 69px;
+    left: 34px;
+    right: auto;
+  }
+
+  .features__wrapper {
+    width: auto;
+  }
+
+  .features__title {
+    margin-left: 162px;
+    margin-bottom: 74px;
+  }
+
+  .features__description {
+    margin-bottom: 31px;
+  }
 }
