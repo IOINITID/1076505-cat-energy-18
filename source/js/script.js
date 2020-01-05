@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-let navigation = document.querySelector('.navigation');
-let navigationToggle = document.querySelector('.navigation__toggle');
+var navigation = document.querySelector('.navigation');
+var navigationToggle = document.querySelector('.navigation__toggle');
 
 navigation.classList.add('navigation--closed');
 
