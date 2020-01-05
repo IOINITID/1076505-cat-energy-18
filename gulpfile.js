@@ -40,7 +40,7 @@ gulp.task("css", function () {
 });
 
 gulp.task("copy", function () {
-  var sourceFiles = ["source/fonts/**/*.{woff,woff2}", "source/js/**/*.min.js", "source/css/normalize.css"];
+  var sourceFiles = ["source/fonts/**/*.{woff,woff2}", "source/js/**/*.min.js"];
   return gulp.src(sourceFiles)
     .pipe(copy("build", {
       prefix: 1
