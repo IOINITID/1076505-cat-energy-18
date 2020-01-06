@@ -146,7 +146,18 @@
   background-color: $main-background;
 }
 
-.example__control::before {
+// .example__control::before {
+//   content: "";
+//   position: absolute;
+//   left: 5px;
+//   top: 3px;
+//   width: 35px;
+//   height: 6px;
+//   background-color: $green;
+//   border-radius: 3px;
+// }
+
+.example__control .example__button {
   content: "";
   position: absolute;
   left: 5px;
@@ -301,10 +312,22 @@
     margin-top: 1px;
     border: none;
     background-color: $gallery-dark;
-    border-radius: 0;
+    // border-radius: 0;
+    border-radius: 2.5px;
   }
 
-  .example__control::before {
+  // .example__control::before {
+  //   width: 32px;
+  //   height: 32px;
+  //   top: -14px;
+  //   left: 198px;
+  //   background-color: $main-background;
+  //   border: 1px solid $grey-darker;
+  //   border-radius: 50%;
+  //   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  // }
+
+  .example__control .example__button {
     width: 32px;
     height: 32px;
     top: -14px;
@@ -313,26 +336,54 @@
     border: 1px solid $grey-darker;
     border-radius: 50%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .example__control::after {
+  // .example__control::after {
+  //   content: "";
+  //   width: 8px;
+  //   height: 8px;
+  //   position: absolute;
+  //   top: -1px;
+  //   left: 211px;
+  //   background-color: $green;
+  //   border-radius: 50%;
+  // }
+
+  .example__control .example__button::before {
     content: "";
     width: 8px;
     height: 8px;
-    position: absolute;
-    top: -1px;
-    left: 211px;
+    // position: absolute;
+    // top: -1px;
+    // left: 211px;
+    // top: 11px;
+    // left: 11px;
     background-color: $green;
     border-radius: 50%;
   }
 
-  .example__control:hover::before {
+  // .example__control:hover::before {
+  //   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+  // }
+
+  .example__control .example__button:hover  {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
   }
 
-  .example__control:active::before {
-    width: 30px;
-    height: 30px;
+  // .example__control:active::before {
+  //   width: 30px;
+  //   height: 30px;
+  //   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+  //   border: 2px solid $green;
+  // }
+
+  .example__control .example__button:active  {
+    width: 32px;
+    height: 32px;
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
     border: 2px solid $green;
   }
