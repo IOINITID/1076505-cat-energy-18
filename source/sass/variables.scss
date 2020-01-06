@@ -4,6 +4,12 @@ $additional-font: "Arial", sans-serif;
 $main-background: #ffffff;
 $additional-background: #f2f2f2;
 
+$tablet-width: 768px;
+$desktop-width: 1300px;
+
+$retina-dppx: 1.5dppx;
+$retina-dpi: 144dpi;
+
 $white: #ffffff;
 
 $grey: #f2f2f2;
@@ -22,9 +28,6 @@ $black-lightest: #444444;
 $green-light: #67b737;
 $green: #68b738;
 $green-dark: #5eaa2f;
-
-$tablet-width: 768px;
-$desktop-width: 1300px;
 
 $red-light: #ff8181;
 $red: #ff8282;

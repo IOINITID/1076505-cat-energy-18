@@ -41,18 +41,38 @@
 
 .nutrition__item--useful::before {
   background-image: url("../img/advantage-leaf@1x.png");
+
+  @media (min-resolution: $retina-dppx),
+    (min-resolution: $retina-dpi) {
+    background-image: url("../img/advantage-leaf@2x.png");
+  }
 }
 
 .nutrition__item--fast::before {
   background-image: url("../img/advantage-powder@1x.png");
+
+  @media (min-resolution: $retina-dppx),
+    (min-resolution: $retina-dpi) {
+    background-image: url("../img/advantage-powder@2x.png");
+  }
 }
 
 .nutrition__item--replace::before {
   background-image: url("../img/advantage-dining@1x.png");
+
+  @media (min-resolution: $retina-dppx),
+    (min-resolution: $retina-dpi) {
+    background-image: url("../img/advantage-dining@2x.png");
+  }
 }
 
 .nutrition__item--improvements::before {
   background-image: url("../img/advantage-clock@1x.png");
+
+  @media (min-resolution: $retina-dppx),
+    (min-resolution: $retina-dpi) {
+    background-image: url("../img/advantage-clock@2x.png");
+  }
 }
 
 @media (min-width: $tablet-width) {
