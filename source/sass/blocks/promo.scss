@@ -144,17 +144,15 @@
     }
   }
 
-  .promo .promo__wrapper {
+  .promo__wrapper {
     min-height: 632px;
-    padding-left: 80px;
-    box-sizing: border-box;
   }
 
   .promo__title,
   .promo__text {
     width: 450px;
     padding: 0;
-    // margin-left: 80px;
+    margin-left: 80px;
   }
 
   .promo__title {
@@ -166,14 +164,13 @@
     height: 499px;
     position: absolute;
     top: 5px;
-    // left: 490px;
-    left: 450px;
+    left: 490px;
   }
 
   .promo__link {
     position: static;
     margin-top: 53px;
-    // margin-left: 80px;
+    margin-left: 80px;
   }
 }
 
