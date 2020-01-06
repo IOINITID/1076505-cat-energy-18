@@ -104,9 +104,13 @@ gulp.task("server", function () {
     ui: false
   });
 
+  gulp.task("update", function () {
+    server.reload();
+  });
+
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch(svgFiles, gulp.series("svg", server.reload));
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/*.html").on("change", gulp.series("html", "update"));
 });
 
 gulp.task("start", gulp.series("clean", "html", "css", "js", "copy", "svg", "images", "webp", "server"));
