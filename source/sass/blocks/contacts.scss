@@ -16,6 +16,8 @@
 .contacts__address {
   width: 50%;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .contacts__text {

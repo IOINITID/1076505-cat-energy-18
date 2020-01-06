@@ -370,7 +370,7 @@
   //   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
   // }
 
-  .example__control .example__button:hover  {
+  .example__control .example__button:hover {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
   }
 
@@ -381,7 +381,7 @@
   //   border: 2px solid $green;
   // }
 
-  .example__control .example__button:active  {
+  .example__control .example__button:active {
     width: 32px;
     height: 32px;
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
@@ -477,5 +477,9 @@
 
   .example__control {
     margin: 0 18px;
+  }
+
+  .example__control .example__button:hover {
+    cursor: pointer;
   }
 }
