@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font" crossorigin="anonymous">
   <script>
     document.createElement("picture");
   </script>
@@ -84,13 +88,13 @@
           <label class="form__field form__field--email">E-mail:*
             <input type="email" name="email" placeholder="kuklachev@gmail.com" required>
             <svg width="17" height="13" aria-hidden="true">
-              <use xlink:href="img/icons.svg#icon-mail"></use>
+              <use xlink:href="img/sprite.svg#icon-mail"></use>
             </svg>
           </label>
           <label class="form__field form__field--phone">Телефон:*
             <input type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
             <svg width="20" height="20" aria-hidden="true">
-              <use xlink:href="img/icons.svg#icon-phone"></use>
+              <use xlink:href="img/sprite.svg#icon-phone"></use>
             </svg>
           </label>
         </fieldset>
@@ -163,30 +167,31 @@
         <li class="social__item">
           <a class="social__link social__link--vk" href="#" title="Мы в Vkontakte">
             <svg width="22" height="12" aria-hidden="true">
-              <use xlink:href="img/icons.svg#icon-vk"></use>
+              <use xlink:href="img/sprite.svg#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--instagram" href="#" title="Мы в Instagram">
             <svg width="16" height="19" aria-hidden="true">
-              <use xlink:href="img/icons.svg#icon-insta"></use>
+              <use xlink:href="img/sprite.svg#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--fb" href="#" title="Мы в Facebook">
             <svg width="10" height="19" aria-hidden="true">
-              <use xlink:href="img/icons.svg#icon-fb"></use>
+              <use xlink:href="img/sprite.svg#icon-fb"></use>
             </svg>
           </a>
         </li>
       </ul>
       <p class="footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="HTML Academy">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
+          title="HTML Academy">
           <span class="copyright__text">HTML Academy</span>
           <svg class="copyright__image" width="27" height="34" aria-hidden="true">
-            <use xlink:href="img/icons.svg#htmlacademy"></use>
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </p>
