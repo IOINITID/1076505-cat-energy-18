@@ -9,8 +9,6 @@
 
 .header__logo {
   display: block;
-  width: 191px;
-  height: 39px;
   margin-bottom: 15px;
 }
 
@@ -25,6 +23,8 @@
 .header__logo-image {
   display: block;
   pointer-events: none;
+  width: 191px;
+  height: 39px;
 }
 
 @media (min-width: $tablet-width) {

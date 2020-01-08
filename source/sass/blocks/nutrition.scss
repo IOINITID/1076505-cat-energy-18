@@ -91,6 +91,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    counter-reset: list;
   }
 
   .nutrition__item {
@@ -102,6 +103,7 @@
     margin-bottom: 20px;
     padding-left: 0;
     padding-right: 79px;
+    list-style-type: none;
   }
 
   .nutrition__item::before {
@@ -114,6 +116,8 @@
   }
 
   .nutrition__item::after {
+    counter-increment: list;
+    content: counter(list);
     font-size: 281px;
     line-height: 281px;
     color: $additional-background;
@@ -123,22 +127,6 @@
     top: 0;
     left: 113px;
     z-index: -1;
-  }
-
-  .nutrition__item--useful::after {
-    content: "1";
-  }
-
-  .nutrition__item--fast::after {
-    content: "2";
-  }
-
-  .nutrition__item--replace::after {
-    content: "3";
-  }
-
-  .nutrition__item--improvements::after {
-    content: "4";
   }
 }
 
