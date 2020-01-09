@@ -80,29 +80,44 @@
 
 .form__field.form__field--name input {
   margin-left: 14px;
-  line-height: normal;
 }
 
 .form__field.form__field--weight input {
   margin-left: 17px;
-  line-height: normal;
 }
 
 .form__field.form__field--age input {
   margin-left: 15px;
+}
+
+.form__field.form__field--name input::-webkit-input-placeholder {
+  line-height: normal;
+}
+
+.form__field.form__field--weight input::-webkit-input-placeholder {
+  line-height: normal;
+}
+
+.form__field.form__field--age input::-webkit-input-placeholder {
+  line-height: normal;
+}
+
+.form__field.form__field--email input::-webkit-input-placeholder {
+  line-height: normal;
+}
+
+.form__field.form__field--phone input::-webkit-input-placeholder {
   line-height: normal;
 }
 
 .form__field.form__field--email input {
   margin-left: 11px;
   padding-right: 40px;
-  line-height: normal;
 }
 
 .form__field.form__field--phone input {
   margin-left: 10px;
   padding-right: 40px;
-  line-height: normal;
 }
 
 .form__field--email,
