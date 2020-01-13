@@ -51,15 +51,10 @@
 }
 
 .control__input:focus ~ .control__label::before {
-  border: 2px solid $black-lightest;
+  border: 1px solid $grey-lighter;
 }
 
-.control__input:active:enabled ~ .control__label:not(:active) .control__text,
-.control__input:active:enabled ~ .control__label:not(:active)::before,
-.control__input:active:enabled ~ .control__label:not(:active)::after,
-.control__input:active:enabled ~ .control__label:active .custom-control__text,
-.control__input:active:enabled ~ .control__label:active::before,
-.control__input:active:enabled ~ .control__label:active::after {
+.control__input:active:enabled ~ .control__label {
   opacity: 0.3;
 }
 
