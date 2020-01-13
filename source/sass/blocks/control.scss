@@ -58,6 +58,10 @@
   opacity: 0.3;
 }
 
+.control__input:active:enabled ~ .control__label::before {
+  border-color: $grey-lighter;
+}
+
 .control__label:hover::before {
   border-color: $grey-lighter;
 }
