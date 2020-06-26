@@ -1,4 +1,4 @@
-Название: **Кэт энерджи** 
+Название: **Кэт энерджи** [![Build Status](https://travis-ci.com/IOINITID/cat-energy.svg?branch=master)](https://travis-ci.com/IOINITID/cat-energy)
 
 ------------
 
